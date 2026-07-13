@@ -84,9 +84,9 @@ $($stringLines -join [Environment]::NewLine)
 
 $iexpress = Join-Path $env:SystemRoot 'System32\iexpress.exe'
 if (-not (Test-Path -LiteralPath $iexpress)) { throw "IExpress not found: $iexpress" }
-& $iexpress /N /Q $sedPath
-if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $targetPath)) {
-    throw "IExpress build failed with exit code $LASTEXITCODE"
+$process = Start-Process -FilePath $iexpress -ArgumentList @('/N','/Q',('"' + $sedPath + '"')) -Wait -PassThru
+if ($process.ExitCode -ne 0 -or -not (Test-Path -LiteralPath $targetPath)) {
+    throw "IExpress build failed with exit code $($process.ExitCode)"
 }
 
 $hash = (Get-FileHash -LiteralPath $targetPath -Algorithm SHA256).Hash
