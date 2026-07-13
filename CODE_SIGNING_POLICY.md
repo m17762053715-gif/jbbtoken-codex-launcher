@@ -5,11 +5,8 @@ Free code signing provided by [SignPath.io](https://signpath.io/), certificate b
 
 ## Roles
 
-- **Committers and reviewers:** repository maintainers with write access.
-- **Approvers:** repository owners.
-
-The concrete GitHub team and owner links will be maintained in this document after
-the public repository is created.
+- **Committers and reviewers:** [m17762053715-gif](https://github.com/m17762053715-gif).
+- **Approvers:** [m17762053715-gif](https://github.com/m17762053715-gif).
 
 ## Build and signing rules
 

@@ -39,8 +39,8 @@ See [Privacy Policy](docs/PRIVACY.md) and [Uninstallation](docs/UNINSTALL.md).
 Free code signing provided by [SignPath.io](https://signpath.io/), certificate by
 [SignPath Foundation](https://signpath.org/).
 
-- Committers and reviewers: repository maintainers with write access.
-- Approvers: repository owners.
+- Committers and reviewers: [m17762053715-gif](https://github.com/m17762053715-gif).
+- Approvers: [m17762053715-gif](https://github.com/m17762053715-gif).
 - Every release signing request requires manual approval.
 - Release binaries must be produced by the GitHub Actions workflow from this repository.
 
